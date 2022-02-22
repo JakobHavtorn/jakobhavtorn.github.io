@@ -5,16 +5,29 @@
 	<meta charset="utf-8">
 
 	<title>Jakob D. Havtorn</title>
+
 	<meta name="description" content="The HTML5 Herald">
 	<meta name="author" content="SitePoint">
 
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Raleway:200,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Raleway:200,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 	<style>
 
         body {
             margin-left: 10px;
             font-family: 'Raleway', sans-serif;
+        }
+
+        p {
+            margin-left: 50px;
+            width: 800px;
+        }
+
+        a {
+            text-decoration: none;
+            color: grey;
         }
 
 		h1#pagetitle {
@@ -38,39 +51,63 @@
 			margin-bottom: 20px;
 		}
 
-		table {
-			margin-left:auto; 
-			margin-right:auto;
-			margin-bottom: 30px;
-    	}
-
-		td { 
-			padding: 5px;
-			padding-bottom: 20px;
-			line-height: 24px;
-			font-family: 'Raleway', sans-serif;
-			text-align: left;
-		}
-
-		span.title {
-			font-weight: 600;
-		}
-
         table {
-            margin-left: 50px
+            margin-left: 50px;
+            margin-right:auto;
+            margin-bottom: 30px;
+        }
+        td { 
+            padding: 5px;
+            padding-bottom: 20px;
+            line-height: 24px;
+            font-family: 'Raleway', sans-serif;
+            text-align: left;
+        }
+        table#des td {
+            width: 800px;
+        }
+        table#exp td {
+			width: 800px;
+		}
+		table#edu td {
+			width: 800px;
+		}
+		table#pub td {
+			width: 800px;
+		}
+
+        span.role {
+            font-weight: 600;
+		}
+        
+		span.title {
+            font-weight: 600;
+		}
+        span.author {
+        }
+        span.journal {
+            font-style: italic;
+        }
+        span.link {
         }
 
-		table#exp td {
-			width: 500px;
-		}
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 17px;  /* Preferred icon size */
 
-		table#edu td {
-			width: 500px;
-		}
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
 
-		table#pub td {
-			width: 600px;
-		}
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+            }
 
 	</style>
 
@@ -82,51 +119,52 @@
 	<h1 id='pagetitle'>Jakob D. Havtorn</h1>
 
     <p>
-        Industrial PhD Student with the Technical University of Denmark and Corti.ai. <br><br>
-        Researching uncertainty quantification in machine learning on high-dimensional data such as audio.
+        I'm an Industrial PhD Student with the Technical University of Denmark and Corti.ai. <br><br>
+        I work with deep generative models for representation learning and uncertainty quantification.
+        I'm interested in efficient inference, e.g. using variational methods, unsupervised and semi-supervised learning.
+        I currently put these methods to work in natural language processing applications including speech recognition and synthesis.
     </p>
 
     <h2>Links</h2>
     <hr>
+    <p>Here are links to my most recent CV and my scholar, LinkedIn and Twitter pages</p>
     <table id='links'>
         <tr>
             <td>
-                <a href=data/cv.pdf>CV</a>
-                <br>
-                <a href=https://scholar.google.com/citations?user=azrs0T8AAAAJ&hl=da&authuser=1>Google Scholar</a>
-                <br>
-                <a href=https://www.linkedin.com/in/jakobhavtorn>LinkedIn</a>
-                <br>
-                <a href=https://twitter.com/JakobHavtorn>Twitter</a>
+                <span class="link"> </span><a target="_blank" href=data/cv.pdf><span class="material-icons">open_in_new</span></a> CV</span><br>
+                <span class="link"> </span><a target="_blank" href=https://scholar.google.com/citations?user=azrs0T8AAAAJ&hl=da&authuser=1><span class="material-icons">open_in_new</span></a> Google Scholar</span><br>
+                <span class="link"> </span><a target="_blank" href=https://www.linkedin.com/in/jakobhavtorn><span class="material-icons">open_in_new</span></a> LinkedIn</span><br>
+                <span class="link"> </span><a target="_blank" href=https://twitter.com/JakobHavtorn><span class="material-icons">open_in_new</span></a> Twitter</span>
             </td>
         </tr>
     </table>
 
 	<h2>Selected publications</h2>
 	<hr></hr>
+    <p>Below is a selection of my published papers. For a complete list, see my scholar page.</p>
     <table id='pub'>
         <tr>
             <td>
                 <span class='title'>Hierarchical VAEs Know What They Don't Know</span><br>
-                Jakob D. Havtorn, Jes Frellsen, Søren Hauberg, Lars Maaløe<br>
-                Proceedings of the 38th International Conference on Machine Learning (ICML 2021)<br>
-                <a href="http://proceedings.mlr.press/v139/havtorn21a.html">http://proceedings.mlr.press/v139/havtorn21a.html</a>
+                <span class='author'>Jakob D. Havtorn, Jes Frellsen, Søren Hauberg, Lars Maaløe.</span><br>
+                <span class='journal'>Proceedings of the 38th International Conference on Machine Learning (ICML 2021).</span>
+                <a href="http://proceedings.mlr.press/v139/havtorn21a.html" target="_blank"><span class="material-icons">open_in_new</span></a>
             </td>
         </tr>
         <tr>
             <td>
                 <span class='title'>Do end-to-end speech recognition models care about context</span><br>
-                Lasse Borgholt, Jakob Drachmann Havtorn, Željko Agić, Anders Søgaard, Lars Maaløe, Christian Igel<br>
-                Proceedings of the 21st Annual Conference of the International Speech Communication Association (Interspeech 2017)<br>
-                <a href="http://www.interspeech2020.org/uploadfile/pdf/Thu-2-8-4.pdf">http://www.interspeech2020.org/uploadfile/pdf/Thu-2-8-4.pdf</a>
+                <span class='author'>Lasse Borgholt, Jakob Drachmann Havtorn, Željko Agić, Anders Søgaard, Lars Maaløe, Christian Igel.</span><br>
+                <span class='journal'>Proceedings of the 21st Annual Conference of the International Speech Communication Association (Interspeech 2021).</span>
+                <a href="http://www.interspeech2020.org/uploadfile/pdf/Thu-2-8-4.pdf" target="_blank"><span class="material-icons">open_in_new</span></a>
             </td>
         </tr>
         <tr>
             <td>
                 <span class='title'>MultiQT: Multimodal learning for real-time question tracking in speech</span><br>
-                Jakob D Havtorn, Jan Latko, Joakim Edin, Lasse Borgholt, Lars Maaløe, Lorenzo Belgrano, Nicolai F Jacobsen, Regitze Sdun, Željko Agić<br>
-                Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020) <br>
-                <a href="https://aclanthology.org/2020.acl-main.215/">https://aclanthology.org/2020.acl-main.215/</a>
+                <span class='author'>Jakob D Havtorn, Jan Latko, Joakim Edin, Lasse Borgholt, Lars Maaløe, Lorenzo Belgrano, Nicolai F Jacobsen, Regitze Sdun, Željko Agić.</span><br>
+                <span class='journal'>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL 2020).</span>
+                <a href="https://aclanthology.org/2020.acl-main.215/" target="_blank"><span class="material-icons">open_in_new</span></a>
             </td>
         </tr>
     </table>
@@ -136,21 +174,21 @@
     <table id='exp'>
         <tr>
             <td>
-                <span class='title'>Research Principal and PhD Student</span><br>
+                <span class='role'>Research Principal and PhD Student</span><br>
                 Corti<br>
                 <span class='period'>August 2020 - Present</span>
             </td>
         </tr>
         <tr>
             <td>
-                <span class='title'>Lead Machine Learning Engineer</span><br>
+                <span class='role'>Lead Machine Learning Engineer</span><br>
                 Corti<br>
                 <span class='period'>August 2019 - August 2020</span>
             </td>
         </tr>
         <tr>
             <td>
-                <span class='title'>Machine Learning Engineer</span><br>
+                <span class='role'>Machine Learning Engineer</span><br>
                 Corti<br>
                 <span class='period'>August 2018 - August 2019</span>
             </td>
@@ -162,26 +200,25 @@
     <table id='edu'>
         <tr>
             <td>
-                <span class='title'>PhD Student</span><br>
+                <span class='role'>PhD Student</span><br>
                 Technical University of Denmark<br>
                 <span class='period'>September 2020 - August 2023</span>
             </td>
         </tr>
         <tr>
             <td>
-                <span class='title'>Master of Science in Engineering, Mathematical Modelling and Computation</span><br>
+                <span class='role'>Master of Science in Engineering, Mathematical Modelling and Computation</span><br>
                 Technical University of Denmark<br>
                 <span class='period'>September 2016 - July 2018</span>
             </td>
         </tr>
         <tr>
             <td>
-                <span class='title'>Bachelor of Science in Engineering, Physics</span><br>
+                <span class='role'>Bachelor of Science in Engineering, Physics</span><br>
                 Techincal University of Denmark<br>
                 <span class='period'>September 2013 - July 2016</span>
             </td>
         </tr>
     </table>
-
 </body>
 </html>
